@@ -1,0 +1,17 @@
+<div *ngFor="let post of posts">
+    <ul class="list-unstyled">
+        <li class="row media">
+            <div class="col-3">
+                <img class="mr-3 mb-3 cows" src="{{post.img}}" alt="learning in progress">
+            </div>
+            <div class="media-body col-7">
+                <h5 class="mt-0 mb-0 ml-5">{{post.title}}</h5>
+                {{post.text}}
+                <p class="text-end">
+                    <a class="comments" routerLink="/comments" routerLinkActive="active">Read more comments
+                        ({{post.comments}})</a>
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
